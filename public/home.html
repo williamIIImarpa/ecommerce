@@ -7,8 +7,8 @@
     <title>Ecommerce</title>
 </head>
 <body class="px-8">
-        <header class="bg-inherit">
-            <div class="grid grid-flow-col grid-cols-12 pt-6 border-b">
+        <header class="bg-white w-full fixed border-b ">
+            <div class="grid grid-flow-col grid-cols-12 pt-6">
                 <!--page logo here-->
                 <div class="font-bold text-sm  md:text-2xl lg:text-3xl col-span-3">
                     <h1>Ecommerce</h1>
@@ -27,7 +27,7 @@
                 </div>
                 <!--top right navs-->
                     <div class="col-span-5">
-                        <nav class=" flex justify-end items-end">
+                        <nav class=" pr-10 flex justify-end">
                             <ul class="flex space-x-4">
                                 <!-- Search Tab -->
                                 <li class="realtive">
@@ -42,7 +42,7 @@
                                     
                                 </li>
                                 <!--favorites-->
-                                <li class="pl-8 pr-2">
+                                <li class="pl-0 pr-0">
                                     <button class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -50,7 +50,7 @@
                                     </button>
                                 </li>
                                 <!--cart-->
-                                <li class="pr-4">
+                                <li class="pr-10">
                                     <button>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
@@ -61,10 +61,12 @@
                         </nav>
                     </div>            
             </div>
+         
         </header>
         
+        
 
-<main class="pt-12 px-4">
+<main class="pt-16 px-4">
     <!--category navs here-->
         <div class="grid grid-flow-col grid-cols-4 gap-10 pb-20">
             <div class="bg-inherit">
@@ -92,7 +94,7 @@
         </div>
 
         <!--daily sale go here-->
-        <section class="bg-purple-400">
+        <section class="bg-inherit">
             <div class="flex justify-start pt-0 pb-2 ">
                 <div class="bg-red-500 w-4 h-8 rounded-sm">
 
@@ -103,7 +105,7 @@
 
             </div>
             <!--promo salse goeshere-->
-            <div class="bg-slate-50 text-sm" >
+            <div class=" text-sm" >
                 <ul class="flex flex-grow justify-start pl-96">
                     <li class="mr-10">Days</li>
                     <li class="mr-10">Hours</li>
@@ -111,25 +113,552 @@
                     <li >Seconds</li>
                 </ul> 
             </div>
-            <div class="flex flex-grow justify-start bg-red-200 font-semibold text-5xl">
-                <div>
+            <div class="flex flex-grow justify-start  font-semibold text-5xl">
+                <div class="">
                     <h1>Flash Sales</h1>
                 </div>
                 <!--timer goes here-->
-                <div >
-                   <div >00</div>
-                   <div>:</div>
-                   <div>00</div>
-                   <div>:</div>
-                   <div>00</div>
-                   <div>:</div>
-                   <div>00</div>
+                <div  class="flex pl-28">
+                   <div class="px-4 pr-1">00</div>
+                   <div class="pl-1 px-0">:</div>
+                   <div class="px-4 pr-0">00</div>
+                   <div class="pl-1 px-0">:</div>
+                   <div class="px-4 pr-0">00</div>
+                   <div class="pl-1 px-0">:</div>
+                   <div class="px-4 pr-0">00</div>
                 </div>
             </div>
+            <!--cards go here-->
+           
+            <div class="flex py-4 pl-1 ">
+                <!--card wrapper-->
+                <div class="bg-inherit rounded-md hover:cursor-pointer hover:shadow-md">
+                    <div class="bg-slate-100">
+                        <div class="flex justify-between px-2 py-2">
+                            <!--sale percent-->
+                            <div class="px-2  w-10 h-5 rounded-md bg-red-700 text-gray-50 text-sm items-center"><span>50%</span></div>
+
+                            <!--fav and cart buttons-->
+                            <div class="block gap-2">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-7 bg-white rounded-full p-1"
+                                    stroke="black"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                                      </svg>
+                                      
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20" fill="none" class="size-7 bg-white  rounded-full  p-1"
+                                stroke="black"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                                  </svg>
+                                  
+                                <button>
+
+                                </button>
+
+                            </div>
+                        </div>
+                       
+                        <img class="h-48 w-56 rounded-sm" src="img/ps5-spidey.png" alt="ps5-controller">
+                    </div>
+
+                    <h3 class="pt-1 uppercase font-semibold">Ps5 Controller</h3>
+                    <div class="py-2 felx text-sm">
+                        <span class="text-red-600">$100</span>
+                        <span class="text-gray-600 pl-2 "><del>$140</del></span>
+                    </div>
+
+                    <!--stars go here-->
+                   
+                    <div class="flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                             fill="gold"
+                             class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                          </svg>
+                       </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                    </div>  
+                </div>
+
+                <!--card wrapper-->
+                <div class="bg-inherit rounded-md hover:cursor-pointer hover:shadow-md">
+                    <div class="bg-slate-100">
+                        <div class="flex justify-between px-2 py-2">
+                            <!--sale percent-->
+                            <div class="px-2  w-10 h-5 rounded-md bg-red-700 text-gray-50 text-sm items-center"><span>50%</span></div>
+
+                            <!--fav and cart buttons-->
+                            <div class="block gap-2">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-7 bg-white rounded-full p-1"
+                                    stroke="black"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                                      </svg>
+                                      
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20" fill="none" class="size-7 bg-white  rounded-full  p-1"
+                                stroke="black"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                                  </svg>
+                                  
+                                <button>
+
+                                </button>
+
+                            </div>
+                        </div>
+                       
+                        <img class="h-48 w-56 rounded-sm" src="img/ps5-spidey.png" alt="ps5-controller">
+                    </div>
+
+                    <h3 class="pt-1 uppercase font-semibold">Ps5 Controller</h3>
+                    <div class="py-2 felx text-sm">
+                        <span class="text-red-600">$100</span>
+                        <span class="text-gray-600 pl-2 "><del>$140</del></span>
+                    </div>
+
+                    <!--stars go here-->
+                   
+                    <div class="flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                             fill="gold"
+                             class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                          </svg>
+                       </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                    </div>  
+                </div>
+                <!--card wrapper-->
+                <div class="bg-inherit rounded-md hover:cursor-pointer hover:shadow-md">
+                    <div class="bg-slate-100">
+                        <div class="flex justify-between px-2 py-2">
+                            <!--sale percent-->
+                            <div class="px-2  w-10 h-5 rounded-md bg-red-700 text-gray-50 text-sm items-center"><span>50%</span></div>
+
+                            <!--fav and cart buttons-->
+                            <div class="block gap-2">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-7 bg-white rounded-full p-1"
+                                    stroke="black"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                                      </svg>
+                                      
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20" fill="none" class="size-7 bg-white  rounded-full  p-1"
+                                stroke="black"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                                  </svg>
+                                  
+                                <button>
+
+                                </button>
+
+                            </div>
+                        </div>
+                       
+                        <img class="h-48 w-56 rounded-sm" src="img/ps5-spidey.png" alt="ps5-controller">
+                    </div>
+
+                    <h3 class="pt-1 uppercase font-semibold">Ps5 Controller</h3>
+                    <div class="py-2 felx text-sm">
+                        <span class="text-red-600">$100</span>
+                        <span class="text-gray-600 pl-2 "><del>$140</del></span>
+                    </div>
+
+                    <!--stars go here-->
+                   
+                    <div class="flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                             fill="gold"
+                             class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                          </svg>
+                       </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                    </div>  
+                </div>
+                <!--card wrapper-->
+                <div class="bg-inherit rounded-md hover:cursor-pointer hover:shadow-md">
+                    <div class="bg-slate-100">
+                        <div class="flex justify-between px-2 py-2">
+                            <!--sale percent-->
+                            <div class="px-2  w-10 h-5 rounded-md bg-red-700 text-gray-50 text-sm items-center"><span>50%</span></div>
+
+                            <!--fav and cart buttons-->
+                            <div class="block gap-2">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-7 bg-white rounded-full p-1"
+                                    stroke="black"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                                      </svg>
+                                      
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20" fill="none" class="size-7 bg-white  rounded-full  p-1"
+                                stroke="black"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                                  </svg>
+                                  
+                                <button>
+
+                                </button>
+
+                            </div>
+                        </div>
+                       
+                        <img class="h-48 w-56 rounded-sm" src="img/ps5-spidey.png" alt="ps5-controller">
+                    </div>
+
+                    <h3 class="pt-1 uppercase font-semibold">Ps5 Controller</h3>
+                    <div class="py-2 felx text-sm">
+                        <span class="text-red-600">$100</span>
+                        <span class="text-gray-600 pl-2 "><del>$140</del></span>
+                    </div>
+
+                    <!--stars go here-->
+                   
+                    <div class="flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                             fill="gold"
+                             class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                          </svg>
+                       </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                    </div>  
+                </div>
+                <!--card wrapper-->
+                <div class="bg-inherit rounded-md hover:cursor-pointer hover:shadow-md">
+                    <div class="bg-slate-100">
+                        <div class="flex justify-between px-2 py-2">
+                            <!--sale percent-->
+                            <div class="px-2  w-10 h-5 rounded-md bg-red-700 text-gray-50 text-sm items-center"><span>50%</span></div>
+
+                            <!--fav and cart buttons-->
+                            <div class="block gap-2">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-7 bg-white rounded-full p-1"
+                                    stroke="black"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                                      </svg>
+                                      
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20" fill="none" class="size-7 bg-white  rounded-full  p-1"
+                                stroke="black"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                                  </svg>
+                                  
+                                <button>
+
+                                </button>
+
+                            </div>
+                        </div>
+                       
+                        <img class="h-48 w-56 rounded-sm" src="img/ps5-spidey.png" alt="ps5-controller">
+                    </div>
+
+                    <h3 class="pt-1 uppercase font-semibold">Ps5 Controller</h3>
+                    <div class="py-2 felx text-sm">
+                        <span class="text-red-600">$100</span>
+                        <span class="text-gray-600 pl-2 "><del>$140</del></span>
+                    </div>
+
+                    <!--stars go here-->
+                   
+                    <div class="flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                             fill="gold"
+                             class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                          </svg>
+                       </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                    </div>  
+                </div>
+                <!--card wrapper-->
+                <div class="bg-inherit rounded-md hover:cursor-pointer hover:shadow-md">
+                    <div class="bg-slate-100">
+                        <div class="flex justify-between px-2 py-2">
+                            <!--sale percent-->
+                            <div class="px-2  w-10 h-5 rounded-md bg-red-700 text-gray-50 text-sm items-center"><span>50%</span></div>
+
+                            <!--fav and cart buttons-->
+                            <div class="block gap-2">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-7 bg-white rounded-full p-1"
+                                    stroke="black"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                                      </svg>
+                                      
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20" fill="none" class="size-7 bg-white  rounded-full  p-1"
+                                stroke="black"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                                  </svg>
+                                  
+                                <button>
+
+                                </button>
+
+                            </div>
+                        </div>
+                       
+                        <img class="h-48 w-56 rounded-sm" src="img/ps5-spidey.png" alt="ps5-controller">
+                    </div>
+
+                    <h3 class="pt-1 uppercase font-semibold">Ps5 Controller</h3>
+                    <div class="py-2 felx text-sm">
+                        <span class="text-red-600">$100</span>
+                        <span class="text-gray-600 pl-2 "><del>$140</del></span>
+                    </div>
+
+                    <!--stars go here-->
+                   
+                    <div class="flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                             fill="gold"
+                             class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                          </svg>
+                       </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 20 20"
+                            fill="gold"
+                            class="size-5">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                    </div>  
+                </div>
+            </div>
+            <!--veiw all button-->
+            <div class="w-full flex  border-b  justify-center py-4">
+                <button class="bg-red-600 px-5 py-3 text-gray-50 rounded-md ">
+                    <h1>View All Products</h1>
+    
+                </button>
+            </div>
+               
            
             
-          
-
         </section>
 
 
